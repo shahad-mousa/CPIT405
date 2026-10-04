@@ -1,56 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 03</title>
 
     <style>
-       .image-preview img {
-    border-style: solid;
-    border-width: 30px;
-    border-top-color: skyblue;
-    border-right-color: lightpink;
-    border-bottom-color: lightgreen;
-    border-left-color: #ffefd5;
-}
+        /* Question 1 */
+        .image-preview img {
+            border-style: solid;
+            border-width: 30px;
+            border-top-color: skyblue;
+            border-right-color: lightpink;
+            border-bottom-color: lightgreen;
+            border-left-color: #ffefd5;
+        }
+
+        /* Question 2 */
+        p > span {
+            color: red;
+        }
+
+        #header span {
+            color: pink;
+        }
+
+        span {
+            color: green;
+        }
+
+        #header *:last-child {
+            color: orange;
+        }
+
+        #header span:first-child:hover {
+            color: blue;
+        }
     </style>
+
 </head>
 
 <body>
 
+    <h2>Question 1</h2>
+
     <div class="image-preview">
-    <img src="https://cpit405.gitlab.io/images/KAU_logo.png">
-</div>
+        <img src="https://cpit405.gitlab.io/images/KAU_logo.png">
+    </div>
+
+
+    <h2>Question 2</h2>
+
+    <div id="header">
+        <span class="myclass1">Every</span>
+        <span class="myclass2">one can</span>
+        <span class="myclass3">success.</span>
+    </div>
+
+    <p>
+        One machine can do the work of fifty ordinary men.
+        <span class="myclass4">
+            No machine can do the work of one extraordinary man.
+        </span>
+    </p>
+
+
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>color</th>
+            <th>color when mouse over</th>
+        </tr>
+
+        <tr>
+            <th>span.myclass1</th>
+            <td>Pink</td>
+            <td>Blue</td>
+        </tr>
+
+        <tr>
+            <th>span.myclass2</th>
+            <td>Pink</td>
+            <td>Pink</td>
+        </tr>
+
+        <tr>
+            <th>span.myclass3</th>
+            <td>Orange</td>
+            <td>Orange</td>
+        </tr>
+
+        <tr>
+            <th>span.myclass4</th>
+            <td>Red</td>
+            <td>Red</td>
+        </tr>
+    </table>
 
 </body>
+
 </html>
-<table border="1">
-    <tr>
-        <th></th>
-        <th>color</th>
-        <th>color when mouse over</th>
-    </tr>
-
-    <tr>
-        <th>span.myclass1</th>
-        <td>Pink</td>
-        <td>Blue</td>
-    </tr>
-
-    <tr>
-        <th>span.myclass2</th>
-        <td>Pink</td>
-        <td>Pink</td>
-    </tr>
-
-    <tr>
-        <th>span.myclass3</th>
-        <td>Orange</td>
-        <td>Orange</td>
-    </tr>
-
-    <tr>
-        <th>span.myclass4</th>
-        <td>Red</td>
-        <td>Red</td>
-    </tr>
-</table>
