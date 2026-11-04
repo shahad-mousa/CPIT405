@@ -442,9 +442,57 @@ const data = [
     }
 ];
 
+const tableBody = document.getElementById("player-rows");
+const searchInput = document.getElementById("search");
+const teamFilter = document.getElementById("team-filter");
+const darkModeButton = document.getElementById("dark-mode-toggle");
 
+// Populate the team dropdown without duplicates.
+const teams = [...new Set(data.map(player => player.team))];
+teams.forEach(function(team) {
+    const option = document.createElement("option");
+    option.value = team;
+    option.textContent = team;
+    teamFilter.appendChild(option);
+});
 
+// Display the selected players in the table.
+function displayPlayers(players) {
+    tableBody.innerHTML = "";
 
+    players.forEach(function(player) {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td>${player.name}</td>
+            <td>${player.team}</td>
+            <td>${player.points}</td>
+            <td>${player.rebounds}</td>
+            <td>${player.assists}</td>
+        `;
+        tableBody.appendChild(row);
+    });
+}
 
+// Apply both the search text and selected team.
+function filterPlayers() {
+    const searchText = searchInput.value.toLowerCase();
+    const selectedTeam = teamFilter.value;
 
+    const filteredPlayers = data.filter(function(player) {
+        const matchesName = player.name.toLowerCase().includes(searchText);
+        const matchesTeam = selectedTeam === "all" || player.team === selectedTeam;
+        return matchesName && matchesTeam;
+    });
 
+    displayPlayers(filteredPlayers);
+}
+
+searchInput.addEventListener("input", filterPlayers);
+teamFilter.addEventListener("change", filterPlayers);
+
+darkModeButton.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+});
+
+// Show all players when the page loads.
+displayPlayers(data);
