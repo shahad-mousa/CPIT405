@@ -1,18 +1,262 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+
+    <title>Shahad Alkharmani | Portfolio</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
 </head>
+<!-- Welcome Message Script -->
+<script>
+    setTimeout(function () {
+        document.getElementById("welcomeMessage").remove();
+    }, 3300);
+</script>
 
 <body>
 
+    <!-- Header and Navigation -->
+    <header>
+        <div class="brand">
+            <div class="logo">
+                <img src="images/logo.png" alt="Shahad Logo">
+            </div>
 
-    <h1>shahad mousa</h1>
+            <h2>My Portfolio</h2>
+        </div>
 
-    <a href="Labs/laps.html">Labs</a>
+        <nav>
+            <a class="active" href="index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="labs.html">Labs</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-text">
+                <h1>Shahad Alkharmani</h1>
+
+                <p class="student-id">
+                    Information Technology Student
+                </p>
+
+                <p>Student ID: 2110604</p>
+
+                <a class="button" href="cv.html">
+                    Explore More →
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/laptop.png" alt="Laptop with code">
+            </div>
+
+        </section>
+
+
+        <!-- About Me Section -->
+        <section class="home-about">
+
+            <div class="section-title">
+                <h2>Get to Know Me</h2>
+                <p>A LITTLE ABOUT ME ✦</p>
+            </div>
+
+            <div class="about-content">
+                <p>
+                    Hello, I'm Shahad! I'm an Information Technology student
+                    at King Abdulaziz University. I enjoy exploring web
+                    development, learning new technologies, and turning
+                    ideas into practical projects. I'm always looking
+                    for opportunities to improve my skills and grow
+                    as a future IT professional.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Personal Highlights -->
+        <section class="highlights-section">
+
+            <div class="section-title">
+              <h2>Get to Know Me</h2>
+                <p>MORE ABOUT ME ✦</p>
+            </div>
+
+            <div class="highlights-grid">
+
+                <!-- Education -->
+                <div class="highlight-card">
+                    <span class="material-symbols-rounded">school</span>
+                    <h3>Education</h3>
+                    <p>King Abdulaziz University</p>
+                </div>
+
+                <!-- Interests -->
+                <div class="highlight-card">
+                    <span class="material-symbols-rounded">code</span>
+                    <h3>Interests</h3>
+                    <p>Web Development · Technology</p>
+                </div>
+
+                <!-- What I Enjoy -->
+                <div class="highlight-card">
+                    <span class="material-symbols-rounded">lightbulb</span>
+                    <h3>What I Enjoy</h3>
+                    <p>Learning · Problem Solving</p>
+                </div>
+
+                <!-- Career Goal -->
+                <div class="highlight-card">
+                    <span class="material-symbols-rounded">track_changes</span>
+                    <h3>My Goal</h3>
+                    <p>Growing as an IT Professional</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Technical Skills -->
+        <section class="skills-section">
+
+            <div class="section-title">
+                <h2>Technical Skills</h2>
+                <p>MY TECHNICAL KNOWLEDGE ✦</p>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <span class="material-symbols-rounded">code</span>
+                    <h3>HTML</h3>
+                </div>
+
+                <div class="skill-card">
+                    <span class="material-symbols-rounded">palette</span>
+                    <h3>CSS</h3>
+                </div>
+
+                <div class="skill-card">
+                    <span class="material-symbols-rounded">javascript</span>
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="skill-card">
+                    <span class="material-symbols-rounded">terminal</span>
+                    <h3>Python</h3>
+                </div>
+
+                <div class="skill-card">
+                    <span class="material-symbols-rounded">coffee</span>
+                    <h3>Java</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects -->
+        <section class="projects-section">
+
+            <div class="section-title">
+                <h2>My Projects</h2>
+                <p>MY WORK & PRACTICAL EXPERIENCE ✦</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Portfolio Project -->
+                <div class="project-card">
+                    <span class="material-symbols-rounded">web</span>
+
+                    <h3>Personal Portfolio</h3>
+
+                    <p>
+                        A personal website showcasing my background,
+                        technical skills, and web development work.
+                    </p>
+
+                    <a href="index.html">Explore Portfolio →</a>
+                </div>
+
+                <!-- CPIT 405 Labs -->
+                <div class="project-card">
+                    <span class="material-symbols-rounded">code</span>
+
+                    <h3>CPIT 405 Labs</h3>
+
+                    <p>
+                        A collection of practical web development
+                        exercises and projects.
+                    </p>
+
+                    <a href="labs.html">View Labs →</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="home-contact">
+
+            <div class="section-title">
+                <h2>Let's Connect</h2>
+                <p>GET IN TOUCH ✦</p>
+            </div>
+
+            <div class="home-contact-content">
+                <span class="material-symbols-rounded">mail</span>
+
+                <p>
+                    Have a question or want to get in touch?
+                    I'd love to hear from you!
+                </p>
+
+                <a class="button" href="contact.html">
+                    Contact Me →
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Shahad Alkharmani | CPIT 405 ♥</p>
+    </footer>
 
 </body>
+<!-- Welcome Message -->
+<div class="welcome-overlay" id="welcomeMessage">
+    <div class="welcome-box">
+        <span class="material-symbols-rounded">auto_awesome</span>
+        <h2>Welcome to My Portfolio!</h2>
+        <p>Hello! I'm Shahad. I'm happy to have you here.</p>
+    </div>
+</div>
 </html>
+
